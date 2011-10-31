@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:background="@drawable/fitness_smart" android:weightSum="1">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:layout_marginTop="70dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/motion2_up" android:id="@+id/sbmotion_Iv2" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"></ImageView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="246dp" android:layout_height="wrap_content" android:id="@+id/sb_Ly1" android:layout_gravity="center" android:layout_weight="0.84">
+        <SurfaceView android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:id="@+id/sbmotion_Sv1" android:layout_height="wrap_content" android:layout_marginBottom="100dp"></SurfaceView>
+        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/sbmotion_Ibn1" android:background="@drawable/button_play" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"></ImageButton>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:orientation="vertical"
+		android:id="@+id/sbdirect_Ly1">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbdirect_Ly2">
+			<TextView android:text="음식명 : " android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/sbdirect_Tv1" android:layout_marginLeft="10dp"></TextView>
+			<EditText android:id="@+id/sbdirect_Et1"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:layout_weight="1" android:layout_marginRight="10dp"></EditText>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbdirect_Ly3">
+			<TextView android:id="@+id/sbdirect_Ly2" android:text="열량 : "
+				android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginLeft="10dp"></TextView>
+			<EditText android:id="@+id/sbdirect_Et2"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_weight="1" android:inputType="number|numberDecimal" android:layout_marginRight="10dp" android:layout_marginLeft="12dp"></EditText>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

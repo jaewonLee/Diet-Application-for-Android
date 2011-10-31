@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollView1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="match_parent">
+
+	<LinearLayout android:layout_width="match_parent"
+		android:orientation="vertical" android:layout_height="match_parent"
+		android:background="@drawable/bg">
+		<RelativeLayout android:id="@+id/sbmystatus_Ry1"
+			android:layout_height="wrap_content" android:layout_width="match_parent"
+			android:layout_marginTop="25dp">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+				android:layout_height="wrap_content" android:layout_centerVertical="true"
+				android:layout_alignParentLeft="true" android:id="@+id/sbmystatus_Iv1"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv1"
+				android:textColor="#000000" android:text="닉네임"
+				android:layout_toRightOf="@+id/sbmystatus_Iv1"
+				android:layout_centerVertical="true"></TextView>
+			<EditText android:layout_height="wrap_content" android:id="@+id/sbmystatus_Ed1"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:layout_marginRight="30dp"
+				android:layout_width="150dp" android:gravity="right">
+				<requestFocus></requestFocus>
+			</EditText>
+
+		</RelativeLayout>
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbmystatus_Ry2">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Iv2"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv2"
+				android:layout_toRightOf="@+id/sbmystatus_Iv2" android:text=" 성 별"
+				android:textColor="#000000" android:layout_centerVertical="true"></TextView>
+			<RadioGroup android:layout_width="wrap_content"
+				android:id="@+id/sbmystatus_radioGroup1" android:orientation="horizontal"
+				android:layout_height="wrap_content" android:layout_alignParentTop="true"
+				android:layout_toRightOf="@+id/sbmystatus_Tv2"
+				android:layout_marginLeft="36dp">
+				<RadioButton android:checked="true" android:textColor="#000000"
+					android:text="남자" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/sbmystatus_man"></RadioButton>
+				<RadioButton android:textColor="#000000" android:text="여자"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:id="@+id/sbmystatus_woman"></RadioButton>
+			</RadioGroup>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbmystatus_Ry3">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Iv3"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv3"
+				android:layout_toRightOf="@+id/sbmystatus_Iv3" android:text=" 나 이"
+				android:textColor="#000000" android:layout_centerVertical="true"></TextView>
+			<EditText android:layout_height="wrap_content" android:id="@+id/sbmystatus_Ed2"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:inputType="number"
+				android:layout_marginRight="55dp" android:layout_width="60dp"
+				android:maxLength="3" android:gravity="right"></EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv4"
+				android:layout_centerVertical="true" android:textColor="#000000"
+				android:layout_alignParentRight="true" android:textSize="25dp"
+				android:text=" 세" android:layout_marginRight="30dp"></TextView>
+		</RelativeLayout>
+		<RelativeLayout android:layout_height="wrap_content"
+			android:id="@+id/sbmystatus_Ry10" android:layout_width="match_parent">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+				android:layout_height="wrap_content" android:layout_centerVertical="true"
+				android:layout_alignParentLeft="true" android:id="@+id/sbmystatus_Iv15"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv15"
+				android:textColor="#000000" android:layout_toRightOf="@+id/sbmystatus_Iv15"
+				android:layout_centerVertical="true" android:text="트위터 ID"></TextView>
+			<EditText android:layout_height="wrap_content" android:id="@+id/sbmystatus_Ed5"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:layout_marginRight="30dp"
+				android:layout_width="150dp" android:gravity="right">
+				<requestFocus></requestFocus>
+			</EditText>
+
+		</RelativeLayout>
+		<RelativeLayout android:layout_height="wrap_content"
+			android:id="@+id/sbmystatus_Ry11" android:layout_width="match_parent">
+
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+				android:layout_height="wrap_content" android:layout_centerVertical="true"
+				android:layout_alignParentLeft="true" android:id="@+id/sbmystatus_Iv16"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv16"
+				android:textColor="#000000" android:layout_toRightOf="@+id/sbmystatus_Iv16"
+				android:layout_centerVertical="true" android:text="트위터 PW"></TextView>
+			<EditText android:layout_height="wrap_content" android:id="@+id/sbmystatus_Ed6"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:inputType="textPassword"
+				android:layout_marginRight="30dp" android:layout_width="150dp"
+				android:gravity="right">
+				<requestFocus></requestFocus>
+			</EditText>
+
+		</RelativeLayout>
+
+
+
+
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:src="@drawable/line"
+			android:id="@+id/sbmystatus_Iv20" android:layout_marginTop="5dp"></ImageView>
+
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbmystatus_Ry4"
+			android:layout_marginTop="13dp">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Iv4"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv5"
+				android:layout_toRightOf="@+id/sbmystatus_Iv4" android:text=" 키"
+				android:textColor="#000000" android:layout_centerVertical="true"></TextView>
+			<EditText android:layout_height="wrap_content" android:id="@+id/sbmystatus_Ed3"
+				android:layout_alignParentRight="true" android:inputType="number|numberDecimal"
+				android:layout_marginRight="65dp" android:maxLength="3"
+				android:gravity="right" android:layout_width="50dp"></EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv6"
+				android:layout_centerVertical="true" android:textColor="#000000"
+				android:layout_alignParentRight="true" android:textSize="25dp"
+				android:text=" cm" android:layout_marginRight="30dp"></TextView>
+
+		</RelativeLayout>
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbmystatus_Ry5"
+			android:layout_marginTop="13dp">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Iv5"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv7"
+				android:layout_toRightOf="@+id/sbmystatus_Iv5" android:textColor="#000000"
+				android:layout_centerVertical="true" android:text=" 체 중"></TextView>
+			<EditText android:layout_height="wrap_content" android:id="@+id/sbmystatus_Ed4"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:inputType="number|numberDecimal"
+				android:layout_marginRight="65dp" android:maxLength="3"
+				android:gravity="right" android:layout_width="50dp"></EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv8"
+				android:layout_centerVertical="true" android:textColor="#000000"
+				android:layout_alignParentRight="true" android:textSize="25dp"
+				android:text=" kg" android:layout_marginRight="30dp"></TextView>
+
+		</RelativeLayout>
+
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:src="@drawable/line"
+			android:id="@+id/sbmystatus_Iv21" android:layout_marginTop="5dp"></ImageView>
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbmystatus_Ry6"
+			android:layout_marginTop="13dp">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Iv6"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv9"
+				android:layout_toRightOf="@+id/sbmystatus_Iv6" android:textColor="#000000"
+				android:layout_centerVertical="true" android:text=" 레 벨"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv10"
+				android:textColor="#000000" android:text=" 만렙"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:layout_marginRight="112dp"></TextView>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbmystatus_Ry7"
+			android:layout_marginTop="13dp">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Iv7"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv11"
+				android:layout_toRightOf="@+id/sbmystatus_Iv7" android:textColor="#000000"
+				android:layout_centerVertical="true" android:text=" 랭 킹"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv12"
+				android:textColor="#000000" android:text=" 1등"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:layout_marginRight="112dp"></TextView>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbmystatus_Ry8"
+			android:layout_marginTop="13dp">
+			<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Iv8"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv13"
+				android:layout_toRightOf="@+id/sbmystatus_Iv8" android:textColor="#000000"
+				android:layout_centerVertical="true" android:text=" 포인트"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_height="wrap_content" android:id="@+id/sbmystatus_Tv14"
+				android:textColor="#000000" android:text=" 점수"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:layout_marginRight="112dp"></TextView>
+		</RelativeLayout>
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:src="@drawable/line"
+			android:id="@+id/sbmystatus_Iv22" android:layout_marginTop="5dp"></ImageView>
+		<RelativeLayout android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbmystatus_Ry9">
+			<Button android:id="@+id/sbmystatus_Btn2"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="취소" android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:layout_marginRight="15dp"
+				android:textSize="25dp"></Button>
+			<Button android:id="@+id/sbmystatus_Btn1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="수정" android:layout_alignParentTop="true"
+				android:layout_toLeftOf="@+id/sbmystatus_Btn2" android:textSize="25dp"></Button>
+		</RelativeLayout>
+
+	</LinearLayout>
+</ScrollView>

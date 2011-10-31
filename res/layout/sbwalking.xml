@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:background="@drawable/bg">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text=" " android:id="@+id/sbwalking_Tv1"></TextView>
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_gravity="center" android:layout_width="match_parent"
+		android:id="@+id/sbwalking_Ly1">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@drawable/walking_top"
+			android:id="@+id/sbwalking_Iv1"></ImageView>
+		<TextView android:layout_height="wrap_content"
+			android:textSize="30dip" android:text="0.00" android:layout_width="wrap_content"
+			android:layout_alignParentLeft="true" android:textColor="#000000"
+			android:layout_marginBottom="10dip" android:layout_marginLeft="95dip"
+			android:layout_marginTop="50dip" android:id="@+id/sbwalking_Tv2"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_alignParentRight="true"
+			android:text="0.00" android:textSize="30dip" android:textColor="#000000"
+			android:layout_marginBottom="10dip" android:layout_marginRight="60dip"
+			android:layout_marginTop="50dip" android:id="@+id/sbwalking_Tv3"></TextView>
+	</RelativeLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:layout_weight="1"
+		android:id="@+id/sbwalking_Ly2">
+		<com.google.android.maps.MapView
+			android:layout_marginTop="5dip" android:clickable="true" android:id="@+id/mapView"
+			android:apiKey="0SdibEHE-b4h7HjCoo9svwXW9PdVQ68eBvgjgtw"
+			android:layout_width="match_parent" android:layout_height="match_parent"></com.google.android.maps.MapView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/sbwalking_Ly3"
+		android:layout_height="wrap_content" android:layout_gravity="center"
+		android:layout_width="match_parent">
+		<RelativeLayout android:layout_height="match_parent"
+			android:id="@+id/sbwalking_Ly4" android:layout_width="wrap_content">
+			<ImageView android:id="@+id/sbwalking_Iv2" android:src="@drawable/walking_bottom"
+				android:layout_width="230dp" android:layout_height="wrap_content"></ImageView>
+			<TextView android:textSize="40dip" android:layout_height="wrap_content"
+				android:id="@+id/sbwalking_Tv4" android:layout_width="wrap_content"
+				android:text="00:00:00" android:textColor="#000000"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"></TextView>
+		</RelativeLayout>
+		<Button android:layout_height="wrap_content" android:gravity="center"
+			android:layout_width="wrap_content" android:id="@+id/sbwalking_Btn1"
+			android:layout_marginLeft="20dip" android:layout_marginTop="10dip"
+			android:text="현위치" android:clickable="false"></Button>
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:id="@+id/sbwalking_Ly5" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button android:layout_height="wrap_content" android:text="걷기 시작"
+			android:id="@+id/sbwalking_Btn2" android:layout_width="wrap_content"
+			android:layout_weight="1"></Button>
+		<Button android:layout_height="wrap_content" android:id="@+id/sbwalking_Btn3"
+			android:layout_width="wrap_content" android:text="걷기 종료"
+			android:layout_weight="1"></Button>
+	</LinearLayout>
+</LinearLayout>

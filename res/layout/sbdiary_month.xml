@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/llayout" android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg">
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" "></TextView>
+	<LinearLayout android:id="@+id/selectmonth"
+		android:orientation="horizontal" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:gravity="center_horizontal|center_vertical"
+		android:background="#000000" android:padding="5dp">
+		<Button android:id="@+id/btn_calendar_prevmonth"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_marginLeft="10px" />
+		<TextView android:text="" android:id="@+id/CalendarMonthTxt"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#FFFFFF" android:textStyle="bold"
+			android:textSize="22dip" android:gravity="center"
+			android:layout_weight="90" />
+		<Button android:id="@+id/btn_calendar_nextmonth"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_marginRight="10px" />
+	</LinearLayout>
+	<ScrollView android:layout_width="match_parent"
+		android:layout_height="match_parent" android:id="@+id/calendar_scroll">
+		<TableLayout android:id="@+id/tl_calendar_monthly"
+			android:orientation="vertical" android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		</TableLayout>
+	</ScrollView>
+</LinearLayout> 
+
+
+

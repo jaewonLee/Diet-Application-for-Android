@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="#ffffff">
+    <TextView android:id="@+id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" "></TextView>
+    <LinearLayout android:id="@+id/linearLayout1" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
+        <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="방제 : " android:textSize="20px"></TextView>
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="25px" android:id="@+id/room_name" android:textColor="#000000"></TextView>
+        <TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  "></TextView>
+        <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="수행기간 : "></TextView>
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/limit_day" android:textColor="#000000"></TextView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="인원 : "></TextView>
+        <TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  "></TextView>
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/room_size" android:textColor="#000000"></TextView>
+        <TextView android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  "></TextView>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/walking" android:src="@drawable/tag_walk"></ImageView>
+        <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:id="@+id/linearLayout4" android:orientation="vertical">
+            <TextView android:text="TextView" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/walking_cal" android:textColor="#000000"></TextView>
+        </LinearLayout>
+        <TextView android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  "></TextView>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/motion" android:src="@drawable/tag_motion"></ImageView>
+        <LinearLayout android:layout_height="match_parent" android:layout_width="wrap_content" android:id="@+id/linearLayout5" android:orientation="vertical">
+            <TextView android:text="TextView" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/motion_cal" android:textColor="#000000"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout3" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_width="wrap_content" android:text="방장 : "></TextView>
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/room_maker" android:textColor="#000000"></TextView>
+    </LinearLayout>
+</LinearLayout>

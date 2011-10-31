@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_gravity="center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:background="@drawable/main_basic" android:orientation="vertical">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageButton android:layout_height="wrap_content" android:layout_marginTop="10dip" android:layout_marginBottom="10dip" android:id="@+id/motion_menu" android:layout_width="wrap_content" android:layout_centerInParent="true" android:background="@drawable/motion_click"></ImageButton>
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/insert_ex_exercise" android:layout_marginTop="10dip" android:layout_below="@+id/motion_menu" android:layout_alignLeft="@+id/motion_menu" android:layout_alignRight="@+id/motion_menu" android:background="@drawable/fitness_insert_click"></ImageButton>
+        <ImageButton android:layout_marginBottom="10dip" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/start_walking" android:layout_above="@+id/motion_menu" android:layout_alignLeft="@+id/motion_menu" android:layout_alignRight="@+id/motion_menu" android:background="@drawable/gps_click"></ImageButton>
+    </RelativeLayout>
+</LinearLayout>

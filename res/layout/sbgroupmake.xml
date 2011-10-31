@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:background="@drawable/bg">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_height="wrap_content" android:layout_width="match_parent"
+		android:id="@+id/sbgroupmake_Ly1" android:layout_marginTop="23dp">
+		<TextView android:textColor="#000000" android:text="방제"
+			android:id="@+id/sbgroupmake_Tv1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="15dp"
+			android:textSize="20dp"></TextView>
+		<EditText android:layout_height="wrap_content" android:hint="방 제목을 입력해 주세요."
+			android:layout_width="match_parent" android:id="@+id/sbgroupmake_room_name"
+			android:layout_marginLeft="20dp" android:layout_marginRight="10dp"></EditText>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/sbgroupmake_Ly2">
+		<TextView android:layout_width="wrap_content"
+			android:textColor="#000000" android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp" android:text="인원" android:id="@+id/sbgroupmake_Tv2"
+			android:textSize="20dp"></TextView>
+		<Spinner android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/sbgroupmake_persons"
+			android:layout_marginLeft="20dp"></Spinner>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:id="@+id/sbgroupmake_Ly3" android:layout_marginTop="10dp"
+		android:weightSum="1">
+		<TextView android:textColor="#ff0000" android:layout_height="wrap_content"
+			android:text="선택된 미션" android:layout_width="wrap_content" android:id="@+id/sbgroupmake_Tv4"
+			android:textSize="20dp" android:layout_marginLeft="5dp"
+			android:layout_marginTop="5dp"></TextView>
+		<TextView android:layout_height="wrap_content" android:text="없음"
+			android:layout_width="wrap_content" android:id="@+id/sbgroupmake_mission_description"
+			android:textSize="20dp" android:textColor="#000000"
+			android:layout_marginLeft="5dp" android:layout_marginTop="5dp"></TextView>
+		<Button android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:text="   만들기   "
+			android:id="@+id/sbgroupmake_make_room" android:layout_marginTop="5dp"></Button>
+		<TextView android:layout_height="wrap_content" android:text="미션 선택"
+			android:layout_width="wrap_content" android:textColor="#ff0000"
+			android:id="@+id/sbgroupmake_Tv3" android:textSize="20dp"
+			android:layout_marginLeft="5dp" android:layout_marginTop="5dp"></TextView>
+		<ListView android:background="#FFFFFF" android:layout_width="match_parent"
+			android:id="@+id/sbgroupmake_mission_list" android:layout_weight="8.97"
+			android:layout_height="match_parent"></ListView>
+	</LinearLayout>
+</LinearLayout>

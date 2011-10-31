@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="kr.ac.hansung.somebody" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+	<uses-permission android:name="android.permission.RESTART_PACKAGES"></uses-permission>
+	<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"></uses-permission>
+
+	<application android:icon="@drawable/some_icon"
+		android:label="@string/app_name">
+		<activity android:name=".SBMain" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="SBMystatus"
+			android:windowSoftInputMode="stateAlwaysHidden"></activity>
+		<activity android:name="SBResetGoal"></activity>
+		<activity android:name="SBSQLite"></activity>
+		<activity android:name="SBStart"></activity>
+		<activity android:name="SBSetInfo" android:screenOrientation="portrait"></activity>
+		<activity android:name="SBSetGoal" android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateAlwaysHidden"></activity>
+		<activity android:name="SomeBody" android:screenOrientation="portrait"></activity>
+		<activity android:name="SBFitness" android:screenOrientation="portrait"></activity>
+		<activity android:name="SBInputFitness"
+			android:windowSoftInputMode="stateAlwaysHidden"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name="SBFood" android:screenOrientation="portrait"></activity>
+		<activity android:name="SBGraph" android:screenOrientation="portrait"></activity>
+		<activity android:name=".diary.SBDiary"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".walking.SBWalking"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".motion.SBMotion"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".motion.SBMotionSitup"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".motion.SBMotionSwim"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".motion.SBMotionStretching"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".motion.SBMotionJump"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".group.SBGroupDiet"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".group.SBGroupRoom"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".group.SBGroupRoomListomList"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".group.SBDisplayGroupRoom"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".group.SBGroupMake"
+			android:windowSoftInputMode="stateAlwaysHidden"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name="SBCommerce"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name="SBPoint" android:screenOrientation="portrait"></activity>
+		<activity android:name="SBCoupon" android:screenOrientation="portrait"></activity>
+		<activity android:name="SBInsertState"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name="SBShowState"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".twitter.SBTwitter"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"></activity>
+		<activity android:name="com.google.ads.AdActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation" />
+		<activity android:name=".motion.SBSmartTVForWifi"
+			android:screenOrientation="portrait"></activity>
+		<uses-library android:name="com.google.android.maps"></uses-library>
+		<activity android:screenOrientation="portrait" android:name="SBDisplayGroupRoom"></activity>
+		<activity android:name=".smarttv.SBSmartTVSelector"
+			android:screenOrientation="portrait"></activity>
+	</application>
+</manifest>

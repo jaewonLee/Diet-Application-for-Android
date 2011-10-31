@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:layout_marginTop="20dip">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_gravity="center_horizontal"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:gravity="center" android:background="@drawable/bg">
+		<LinearLayout android:layout_height="wrap_content"
+			android:orientation="vertical" android:layout_width="wrap_content"
+			android:id="@+id/sbsetgoal_Ly1">
+			<ImageView android:layout_gravity="center" android:src="@drawable/bmi_green"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:layout_marginTop="30dp" android:id="@+id/sbsetgoal_imageView1"></ImageView>
+			<ImageView android:src="@drawable/goal_bmi"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:id="@+id/sbsetgoal_imageView2" android:layout_marginTop="30dp"></ImageView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:orientation="horizontal" android:layout_width="wrap_content"
+			android:id="@+id/sbsetgoal_Ly2">
+			<TextView android:layout_height="wrap_content" android:text=" "
+				android:layout_width="wrap_content" android:textSize="25dip"
+				android:textColor="#000000" android:id="@+id/sbsetgoal_textView1"></TextView>
+			<ImageButton android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:background="@drawable/btn_act_info"
+				android:id="@+id/sbsetgoal_imageButton1"></ImageButton>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_gravity="center" android:layout_width="match_parent"
+			android:gravity="center" android:layout_marginTop="20dp"
+			android:orientation="vertical" android:id="@+id/sbsetgoal_Ly3">
+			<TableLayout android:layout_gravity="center" android:id="@+id/tableLayout1"
+				android:paddingBottom="10px" android:layout_height="wrap_content"
+				android:layout_width="wrap_content">
+				<TableRow android:layout_gravity="center" android:id="@+id/tableRow1"
+					android:layout_height="wrap_content" android:layout_width="wrap_content">
+					<RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<ImageView android:layout_height="wrap_content" android:id="@+id/sbsetinfo_imageView3" android:src="@drawable/goal_weight" android:layout_width="wrap_content"></ImageView>
+						<ImageView android:layout_height="wrap_content" android:id="@+id/sbsetinfo_imageView5" android:src="@drawable/goal_term" android:layout_width="wrap_content" android:layout_toRightOf="@+id/sbsetinfo_imageView3" android:layout_marginLeft="30dp"></ImageView>
+					</RelativeLayout>
+				</TableRow>
+				<TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<RelativeLayout android:id="@+id/relativeLayout3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<Button android:layout_height="wrap_content" android:id="@+id/sbsetgoal_Btn1" android:layout_width="75dp" android:background="@drawable/picker_up"></Button>
+						<Button android:layout_height="wrap_content" android:background="@drawable/picker_up" android:id="@+id/sbsetgoal_Btn2" android:layout_width="75dp" android:layout_toRightOf="@+id/sbsetgoal_Btn1" android:layout_marginLeft="50dp"></Button>
+					</RelativeLayout>
+				</TableRow>
+				<TableRow android:layout_gravity="center" android:id="@+id/tableRow2"
+					android:layout_height="wrap_content" android:layout_width="wrap_content">
+					<RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:layout_width="match_parent">
+						<EditText android:layout_height="wrap_content" android:id="@+id/sbsetgoal_Weight" android:inputType="number" android:maxLength="3" android:layout_width="75dp" android:gravity="center"></EditText>
+						<EditText android:layout_height="wrap_content" android:id="@+id/sbsetgoal_Term" android:layout_toRightOf="@+id/sbsetgoal_Weight" android:inputType="number" android:layout_marginLeft="50dp" android:maxLength="3" android:layout_width="75dp" android:gravity="center"></EditText>
+						<TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/sbsetgoal_Tv1" android:textColor="#000000" android:text="kg" android:layout_toRightOf="@+id/sbsetgoal_Weight" android:layout_centerVertical="true"></TextView>
+						<TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/sbsetgoal_Tv2" android:textColor="#000000" android:text="일" android:layout_centerVertical="true" android:layout_toRightOf="@+id/sbsetgoal_Term"></TextView>
+					</RelativeLayout>
+				</TableRow>
+				<TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tableRow4">
+					<RelativeLayout android:id="@+id/relativeLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<Button android:layout_height="wrap_content" android:id="@+id/sbsetgoal_Btn3" android:layout_width="75dp" android:background="@drawable/picker_down"></Button>
+						<Button android:layout_height="wrap_content" android:id="@+id/sbsetgoal_Btn4" android:layout_width="75dp" android:layout_toRightOf="@+id/sbsetgoal_Btn3" android:layout_marginLeft="50dp" android:background="@drawable/picker_down"></Button>
+					</RelativeLayout>
+				</TableRow>
+			</TableLayout>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_height="wrap_content" android:layout_width="match_parent"
+			android:orientation="vertical"></LinearLayout>
+		<TextView android:id="@+id/textView3" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="완료날짜 : "
+			android:paddingTop="5px" android:textSize="20dip"
+			android:layout_gravity="center" android:textColor="#FF0000"
+			android:layout_marginTop="10dip"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView4"
+			android:textSize="20dip" android:text="읽어보세요!"
+			android:layout_marginTop="15dip"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView6"
+			android:text="* 무리한 목표는 몸도 마음도 망칩니다." android:layout_marginTop="5dip"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView9"
+			android:text="* 기간은 30-60일 정도로 맞추는게 좋습니다."></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView10"
+			android:text="* 걷기와 모션다이어트를 적극 활용하세요."></TextView>
+		<Button android:layout_height="wrap_content" android:id="@+id/button1"
+			android:layout_width="match_parent" android:text="다이어트 시작"></Button>
+	</LinearLayout>
+</ScrollView>

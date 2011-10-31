@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_gravity="center" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:gravity="center"
+	android:background="@drawable/motion_menu" android:orientation="vertical">
+	<TableLayout android:id="@+id/sbmenu_Ly1"
+		android:layout_gravity="center" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginTop="50dp">
+		<TableRow android:id="@+id/sbmenu_tableRow1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<ImageButton android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/sbmenu_Ibn1"
+				android:background="@drawable/motion_stretching"></ImageButton>
+			<ImageButton android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/sbmenu_Ibn2"
+				android:background="@drawable/motion_pt"></ImageButton>
+		</TableRow>
+		<TableRow android:id="@+id/sbmenu_tableRow2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<ImageButton android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/sbmenu_Ibn3"
+				android:background="@drawable/motion_swim"></ImageButton>
+			<ImageButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/sbmenu_Ibn4"
+				android:background="@drawable/motion_situp"></ImageButton>
+		</TableRow>
+	</TableLayout>
+	<LinearLayout android:id="@+id/sbmenu_Ly2"
+		android:layout_height="wrap_content" android:layout_width="wrap_content">
+		<ImageButton android:background="@drawable/smart_tv_button"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/sbmenu_Ibn5"></ImageButton>
+	</LinearLayout>
+</LinearLayout>

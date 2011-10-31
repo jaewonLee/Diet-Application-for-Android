@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="C:/workspace/SomeBody/lib/twitter4j-core-android-2.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/SomeBody/lib/GoogleAdMobAdsSdk-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/SomeBody/lib/SunGraph.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

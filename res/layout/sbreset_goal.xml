@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:orientation="vertical"
+	android:layout_height="match_parent" android:background="@drawable/bg">
+
+
+
+
+
+
+
+
+
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/sbreset_Ry1"
+		android:layout_marginTop="125dp">
+		<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true" android:id="@+id/sbreset_Iv1"></ImageView>
+		<TextView android:layout_width="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_height="wrap_content" android:textColor="#000000"
+			android:layout_toRightOf="@+id/sbreset_Iv1"
+			android:layout_centerVertical="true" android:id="@+id/sbreset_Tv1"
+			android:text="BMI 지수"></TextView>
+		<EditText android:layout_height="wrap_content" android:id="@+id/sbreset_Ed1"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:layout_marginRight="100dp" android:focusable="false" android:layout_width="100dp">
+			<requestFocus></requestFocus>
+		</EditText>
+		<ImageButton android:src="@drawable/btn_act_info"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:layout_marginRight="50dp" android:id="@+id/sbreset_Ibt1"></ImageButton>
+
+	</RelativeLayout>
+
+
+
+
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/sbreset_Ry2">
+		<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true" android:id="@+id/sbreset_Iv2"></ImageView>
+		<TextView android:layout_width="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_height="wrap_content" android:textColor="#000000"
+			android:layout_toRightOf="@+id/sbreset_Iv2"
+			android:layout_centerVertical="true" android:id="@+id/sbreset_Tv3"
+			android:text="목표 체중"></TextView>
+		<EditText android:layout_height="wrap_content" android:id="@+id/sbreset_Ed2"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:layout_marginRight="100dp" android:inputType="number" android:layout_width="50dp" android:maxLength="3">
+			<requestFocus></requestFocus>
+		</EditText>
+		<TextView android:layout_width="wrap_content" android:id="@+id/sbreset_Tv4"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text=" kg" android:textColor="#000000" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:layout_marginRight="60dp"></TextView>
+
+	</RelativeLayout>
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/sbreset_Ry3">
+		<ImageView android:layout_width="wrap_content" android:src="@drawable/triangle"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true" android:id="@+id/sbreset_Iv3"></ImageView>
+		<TextView android:layout_width="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_height="wrap_content" android:textColor="#000000"
+			android:layout_toRightOf="@+id/sbreset_Iv3"
+			android:layout_centerVertical="true" android:id="@+id/sbreset_Tv5"
+			android:text="목표 기간"></TextView>
+		<EditText android:layout_height="wrap_content" android:id="@+id/sbreset_Ed3"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:layout_marginRight="100dp" android:inputType="number" android:layout_width="50dp" android:maxLength="3">
+
+
+			<requestFocus></requestFocus>
+		</EditText>
+		<TextView android:layout_width="wrap_content" android:id="@+id/sbreset_Tv6"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text=" 일" android:textColor="#000000" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true"
+			android:layout_marginRight="60dp"></TextView>
+	</RelativeLayout>
+
+	<ImageView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:src="@drawable/line"
+		android:id="@+id/sbmystatus_Iv20" android:layout_marginTop="5dp"></ImageView>
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/sbreset_Ry3"
+		android:layout_marginTop="10dp">
+		<Button android:layout_width="wrap_content" android:text="취소"
+			android:textSize="20dp" android:layout_height="wrap_content"
+			android:id="@+id/sbreset_Btn2" android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true" android:layout_marginRight="22dp"></Button>
+		<Button android:layout_width="wrap_content" android:text="수정"
+			android:textSize="20dp" android:layout_height="wrap_content"
+			android:id="@+id/sbreset_Btn1" android:layout_alignParentTop="true"
+			android:layout_toLeftOf="@+id/sbreset_Btn2"></Button>
+	</RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="@drawable/bg" android:orientation="vertical">
+	<LinearLayout android:layout_width="match_parent"
+		android:orientation="vertical" android:id="@+id/sbinputfit_Ly1"
+		android:layout_height="match_parent" android:layout_weight="1.7">
+		<Spinner android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/sbinputfit_Sp1"
+			android:layout_marginTop="30dp"></Spinner>
+		<ListView android:layout_width="match_parent" android:id="@+id/sbinputfit_list1"
+			android:layout_height="wrap_content"></ListView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:orientation="vertical" android:id="@+id/sbinputfit_Ly2"
+		android:layout_height="fill_parent" android:layout_weight="1.5">
+		<ImageView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/imageView1"
+			android:src="@drawable/line"></ImageView>
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_marginTop="23dp" android:layout_height="wrap_content"
+			android:id="@+id/sbinputfit_Ly2">
+			<TextView android:textSize="15dp" android:text="운동명 : "
+				android:layout_width="wrap_content" android:id="@+id/sbinputfit_Tv1"
+				android:layout_marginLeft="10dp" android:textColor="#000000"
+				android:layout_height="wrap_content"></TextView>
+			<EditText android:layout_weight="1" android:id="@+id/sbinputfit_Ed1"
+				android:layout_width="wrap_content" android:layout_marginRight="10dp"
+				android:layout_height="wrap_content" android:layout_marginLeft="34dp"></EditText>
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_marginTop="10dp" android:layout_height="wrap_content"
+			android:id="@+id/sbinputfit_Ly3">
+			<TextView android:textSize="15dp" android:text="칼로리 입력 : "
+				android:layout_width="wrap_content" android:id="@+id/sbinputfit_Tv2"
+				android:textColor="#000000" android:layout_height="wrap_content"
+				android:layout_marginLeft="3dp"></TextView>
+			<EditText android:layout_weight="1" android:id="@+id/sbinputfit_Ed2"
+				android:layout_width="wrap_content" android:layout_marginRight="10dp"
+				android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+				android:inputType="number|numberDecimal"></EditText>
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="match_parent" android:layout_gravity="bottom"
+			android:id="@+id/sbinputfit_Ly4">
+			<Button android:layout_height="wrap_content" android:textSize="20dp"
+				android:text="확인" android:id="@+id/sbinputfit_Btn1"
+				android:layout_width="wrap_content" android:layout_weight="1"
+				android:layout_gravity="bottom"></Button>
+			<Button android:layout_height="wrap_content" android:textSize="20dp"
+				android:text="취소" android:id="@+id/sbinputfit_Btn2"
+				android:layout_width="wrap_content" android:layout_weight="1"
+				android:layout_gravity="bottom"></Button>
+		</LinearLayout>
+		<ScrollView android:layout_height="wrap_content"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent" android:id="@+id/scrollView1">
+		</ScrollView>
+	</LinearLayout>
+
+</LinearLayout>
+
